@@ -1,0 +1,10 @@
+# list of folders to connect to vagrant.
+# order is host => guest
+# host path is relative to Vagrantfile
+folders:
+    . : /vagrant/fp101x
+
+# list of provisioners to run.
+# NB that the path is relative to the Vagrantfile
+provisioners:
+    - 'provisioning/fp101x-setup.sh'
